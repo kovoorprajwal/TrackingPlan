@@ -9,7 +9,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: ['16.x']
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
