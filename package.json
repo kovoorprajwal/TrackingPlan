@@ -9,6 +9,5 @@
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "http": "^0.2.4"
   }
 }
