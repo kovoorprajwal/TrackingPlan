@@ -15,12 +15,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gke-hello-app
+  name: gke-trackingplan-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: gke-hello-app
+      app: gke-trackingplan-app
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -29,7 +29,7 @@ spec:
   template:
     metadata:
       labels:
-        app: gke-hello-app
+        app: gke-trackingplan-app
     spec:
       containers:
       - name: trackingplan-app
